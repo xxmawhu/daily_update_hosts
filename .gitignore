@@ -140,3 +140,5 @@ log
 *.s
 *.i
 *.h5
+hosts
+sys_hosts
