@@ -19,4 +19,4 @@ def add_cron_job_if_not_exists(cron_command, schedule):
 
 if __name__ == "__main__":
     bash_file_name = os.path.abspath("./update_daily.sh")
-    add_cron_job_if_not_exists(f"bash {bash_file_name}", "@daily")
+    add_cron_job_if_not_exists(f"bash {bash_file_name}", "@hourly")
