@@ -10,7 +10,7 @@ def write_to_etc_hosts(input_hosts="hosts", out_hosts="sys_hosts"):
         if _begin + _end == 1:
             continue
         content_lines.append(line)
-    content = "\n".join(content_lines)
+    content = "\n".join(content_lines) + '\n'
     new_hosts = open(input_hosts, 'r').read()
     if begin_token not in new_hosts:
         new_hosts = begin_token + "\n" + new_hosts
